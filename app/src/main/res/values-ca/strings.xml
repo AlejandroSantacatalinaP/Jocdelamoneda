@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Joc de la moneda</string>
+    <string name="txtinicial">"Benvinguts al joc de la moneda. Aquest joc consisteix en fer una pregunta a un dels jugadors, els dos seran elegits amb una ruleta. La pregunta sols la sabran les dos persones en joc. El segon jugador elegit contestarà la pregunta en veu alta. Després es llançarà una moneda, en cas de cara es dirà la pregunta a tots. En cas de creu, s’acabarà la ronda. "</string>
+    <string name="titleinicial">El joc de la moneda</string>
+    <string name="btninicial">Següent</string>
+    <string name="dmaintxt">Mostrar diàlegs sobre com jugar</string>
+    <string name="dsi">sí</string>
+    <string name="dno">no</string>
+    <string name="dtitleruleta">Ruleta</string>
+    <string name="dtxtruleta">D’acord, comença el joc. Ací tindreu que elegir a dos jugadors mitjançant la ruleta. La primera persona serà l’encarregada de formular la pregunta i la segona, la que contestarà aquesta. Fes-la girar !</string>
+    <string name="dbtnruleta">Seguim !</string>
+    <string name="btngirar">Girar</string>
+    <string name="btnparar">Parar</string>
+    <string name="preg">Pregunta</string>
+    <string name="dtxtpregunta">Ja tenim els dos jugadors… El primer que ha segut seleccionat que escriga una pregunta per al segon i polse ‘enviar’. Aquesta pregunta, de moment, sols pot veure-la qui l’escriu !</string>
+    <string name="dbtnenviar">Enviar</string>
+    <string name="dtitlecontestacio">Contestació</string>
+    <string name="dtxtcontestacio">"Passeu el mòbil al segon jugador… "</string>
+    <string name="dtxtcontestacio2">A continuació, llig la pregunta polsant en ‘VEURE LA PREGUNTA’ i contesta-la en veu alta. La pregunta continuarà seguent secreta. Quan acabes llança la moneda per a desvelar o no la pregunta.</string>
+    <string name="btncontestacio">Veure la pregunta</string>
+    <string name="btnllançar">Llançar la moneda</string>
+    <string name="dtitlemoneda">Moneda</string>
+    <string name="dtxtmoneda">Per últim, si ha ixit cara polsa-la per veure i dir la pregunta a tots. En cas de creu, polsa-la per acabar la ronda. Ningú més sabrà la pregunta.</string>
+    <string name="dbtnmoneda">Veure moneda !</string>
+    <string name="quit">Ixir de la app ?</string>
+</resources>

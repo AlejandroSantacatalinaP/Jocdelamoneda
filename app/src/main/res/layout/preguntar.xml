@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/colorBackgroundFloating"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <ImageView
+        android:id="@+id/titlepreguntar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_marginTop="40dp" />
+</LinearLayout><LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fadeScrollbars="false">
+
+        <ImageView
+            android:id="@+id/roda"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/preguntafons" />
+
+        <EditText
+            android:id="@+id/etpregunta"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_marginTop="45dp"
+            android:background="@android:color/transparent"
+            android:maxLines="8"
+            android:minLines="1"
+            android:lineSpacingExtra="0.7mm"
+            android:paddingLeft="10dp"
+            android:paddingRight="7dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="21sp" />
+
+    </FrameLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fons_buttons2"
+        android:text="@string/dbtnenviar"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+        </LinearLayout>
+
+</LinearLayout>

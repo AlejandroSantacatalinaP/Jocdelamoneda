@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="?attr/colorBackgroundFloating"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <ImageView
+        android:id="@+id/titlecontestacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_marginTop="40dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fadeScrollbars="false">
+
+        <ImageView
+            android:id="@+id/fons_pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/mostra_preg" />
+
+        <TextView
+            android:id="@+id/stc_pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="50dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="28sp" />
+
+    </FrameLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <FrameLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_vorela"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fons_buttons2"
+            android:text="@string/btncontestacio"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_moneda"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fons_buttons2"
+            android:text="@string/btnllançar"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coin\'s game</string>
+    <string name="txtinicial">Welcome to The coin’s game. In this game, one player have to make a question to the second, the two will be elected with a spinner. The question will be known only by the two players. The second player have to say the answer to everybody. Then we will flip a coin. If heads you have to say the question to everyone. If tails, we finished the round.</string>
+    <string name="titleinicial">The coin’s game</string>
+    <string name="btninicial">Next</string>
+    <string name="dmaintxt">Show dialogues about how to play</string>
+    <string name="dsi">yes</string>
+    <string name="dno">no</string>
+    <string name="dtitleruleta">Spinner</string>
+    <string name="dtxtruleta">Okey, we are going to start the game. Here we have to choose two players through the spinner. The first player have to make the question and the second have to answer the question. Spin the spinner !</string>
+    <string name="dbtnruleta">Continue !</string>
+    <string name="btngirar">Spin</string>
+    <string name="btnparar">Stop</string>
+    <string name="preg">Question</string>
+    <string name="dtxtpregunta">We have the two players… The first selected have to write the question to the second and click ‘send’. At the moment, the question can only see it who writes the question.</string>
+    <string name="dbtnenviar">Send</string>
+    <string name="dtitlecontestacio">Answer</string>
+    <string name="dtxtcontestacio">Pass the smartphone to the second player...</string>
+    <string name="dtxtcontestacio2">Now, read the question clicking on ‘SEE THE QUESTION’ and answer the question out loud. The question will keep in secret. Then, flip the coin to say or not the question.</string>
+    <string name="btncontestacio">See the question</string>
+    <string name="btnllançar">Flip the coin</string>
+    <string name="dtitlemoneda">Coin</string>
+    <string name="dtxtmoneda">Finally, if heads click it to see and say the question to everybody. If tails, click it to end the round. Nobody else will know the question.</string>
+    <string name="dbtnmoneda">See coin !</string>
+    <string name="quit">Exit from app ?</string>
+</resources>
