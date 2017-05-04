@@ -25,6 +25,8 @@
         android:screenOrientation="portrait"/>
         <activity android:name=".Moneda"
             android:screenOrientation="portrait"/>
+        <activity android:name=".MonedaPropia"
+            android:screenOrientation="portrait"/>
 
     </application>
 

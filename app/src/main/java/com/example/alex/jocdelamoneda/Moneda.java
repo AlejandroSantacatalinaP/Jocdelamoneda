@@ -52,7 +52,7 @@ public class Moneda extends AppCompatActivity {
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Amatic-Bold.ttf");
         pregunta.setTypeface(custom_font);
 
-
+        //User wants tips???
         i = getIntent();
         tips=i.getBooleanExtra("tips",false);
         if (tips){
@@ -118,6 +118,7 @@ public class Moneda extends AppCompatActivity {
 
         dialog.show();
     }
+
     private void StartSpeak(final String data) {
 
         TTS = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -146,13 +147,13 @@ public class Moneda extends AppCompatActivity {
         //Detects the current phone language and adapts the app language.
         String language = Locale.getDefault().getDisplayLanguage();
         if (language.startsWith("es")) {
-            title.setImageResource(R.drawable.moneda_title);
+            title.setImageResource(R.drawable.hort_es);
         }
         else if (language.startsWith("ca")) {
-            title.setImageResource(R.drawable.moneda_title);
+            title.setImageResource(R.drawable.hort_ca);
 
         }else{
-            title.setImageResource(R.drawable.titlemoned_en);
+            title.setImageResource(R.drawable.hort);
         }
     }
 }

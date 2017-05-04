@@ -24,4 +24,12 @@
     <string name="dtxtmoneda">Por último, si ha salido cara, púlsala para ver y decir a todos la pregunta. Si sale cruz, púlsala para terminar la ronda. Nadie más sabrá la pregunta.</string>
     <string name="dbtnmoneda">¡ Ver la moneda !</string>
     <string name="quit">¿ Salir de la app ?</string>
+    <string name="moneda">¿ Quieres lanzar una moneda real o ver la moneda al azar de la aplicación ?</string>
+    <string name="propia">Utilizaré una moneda real</string>
+    <string name="interna">Enséñame la moneda</string>
+    <string name="cara">cara</string>
+    <string name="creu">cruz</string>
+    <string name="valorMoneda">¿ Cara o cruz ?</string>
+    <string name="dtxtmonedapropia">Por último, si ha salido cara, pulsa ‘CARA’ para ver i decir la pregunta a todos. En caso de cruz, pulsa ‘CRUZ’ para acabar la ronda. Nadie más sabrá la pregunta.</string>
+    <string name="dbtnacabar">Terminar ronda</string>
 </resources>

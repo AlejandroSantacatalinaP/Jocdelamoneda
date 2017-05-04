@@ -70,10 +70,7 @@ public class Mostrar_Pregunta extends AppCompatActivity {
         moneda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent moneda = new Intent(getApplicationContext(),Moneda.class);
-                moneda.putExtra("tips",tips);
-                moneda.putExtra("pregunta",i.getStringExtra("pregunta"));
-                startActivity(moneda);
+                dialogM();
             }
         });
     }
@@ -100,6 +97,30 @@ public class Mostrar_Pregunta extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
+                    }
+                }).create();
+
+        dialog.show();
+    }
+    private void dialogM() {
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle(R.string.dtitlemoneda)
+                .setMessage(R.string.moneda)
+                .setPositiveButton(R.string.interna, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent moneda = new Intent(getApplicationContext(),Moneda.class);
+                        moneda.putExtra("tips",tips);
+                        moneda.putExtra("pregunta",i.getStringExtra("pregunta"));
+                        startActivity(moneda);
+                    }
+                }).setNegativeButton(R.string.propia, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent monedaPropia = new Intent(getApplicationContext(),MonedaPropia.class);
+                        monedaPropia.putExtra("tips",tips);
+                        monedaPropia.putExtra("pregunta",i.getStringExtra("pregunta"));
+                        startActivity(monedaPropia);
                     }
                 }).create();
 

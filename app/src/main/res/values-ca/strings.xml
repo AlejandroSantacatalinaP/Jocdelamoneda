@@ -24,4 +24,12 @@
     <string name="dtxtmoneda">Per últim, si ha ixit cara polsa-la per veure i dir la pregunta a tots. En cas de creu, polsa-la per acabar la ronda. Ningú més sabrà la pregunta.</string>
     <string name="dbtnmoneda">Veure moneda !</string>
     <string name="quit">Ixir de la app ?</string>
+    <string name="moneda">Vols llançar una moneda real o veure la moneda a l\'atzar de l\'aplicació?</string>
+    <string name="propia">Utilitzaré una moneda real</string>
+    <string name="interna">Ensenya\'m la moneda</string>
+    <string name="cara">cara</string>
+    <string name="creu">creu</string>
+    <string name="valorMoneda">Cara o creu ?</string>
+    <string name="dtxtmonedapropia">Per últim, si ha ixit cara, polsa el botó ‘CARA’ per veure i dir la pregunta a tots. En cas de creu, pol-sa ‘CREU’ per acabar la ronda. Ningú més sabrà la pregunta.</string>
+    <string name="dbtnacabar">Acabar ronda</string>
 </resources>
