@@ -25,7 +25,7 @@ public class MonedaPropia extends AppCompatActivity {
     TextView titleMP, pregunta;
     static ImageView titlemonedapr;
     ImageView fons;
-    Button cara, creu, acabar;
+    Button cara, creu, acabar,acabarcreu;
     Intent i;
     Random rm = new Random();
     boolean tips, creuz=true;
@@ -42,6 +42,7 @@ public class MonedaPropia extends AppCompatActivity {
         creu = (Button)findViewById(R.id.btn_creu2);
         fons = (ImageView)findViewById(R.id.fons_preguntac);
         acabar = (Button)findViewById(R.id.btn_acabar);
+        acabarcreu = (Button)findViewById(R.id.bacabar_creu);
 
         //Call of changeLanguage()
         changeLanguage();
@@ -53,7 +54,7 @@ public class MonedaPropia extends AppCompatActivity {
         cara.setTypeface(custom_font);
         creu.setTypeface(custom_font);
         acabar.setTypeface(custom_font);
-
+        acabarcreu.setTypeface(custom_font);
 
         i = getIntent();
         pregunta.setText(i.getStringExtra("pregunta"));
@@ -78,7 +79,7 @@ public class MonedaPropia extends AppCompatActivity {
             public void onClick(View v) {
                 cara.setVisibility(View.INVISIBLE);
                 creu.setVisibility(View.INVISIBLE);
-                acabar.setVisibility(View.VISIBLE);
+                acabarcreu.setVisibility(View.VISIBLE);
             }
         });
         acabar.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +90,14 @@ public class MonedaPropia extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        acabarcreu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
     }
     public static void changeLanguage() {
         //Detects the current phone language and adapts the app language.

@@ -21,7 +21,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -57,6 +57,7 @@
                     android:id="@+id/fons_preguntac"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
+                    android:layout_gravity="top"
                     android:background="@drawable/mostra_preg"
                     android:visibility="invisible" />
 
@@ -70,6 +71,18 @@
                     android:text="@string/cara"
                     android:textColor="@android:color/background_dark"
                     android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/bacabar_creu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/fons_buttons2"
+                    android:text="@string/dbtnacabar"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="40sp"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/btn_creu2"
@@ -86,10 +99,9 @@
                     android:id="@+id/stc_cara"
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="30dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:paddingTop="50dp"
                     android:textColor="@android:color/background_dark"
                     android:textColorLink="@android:color/background_dark"
                     android:textSize="28sp"
@@ -98,31 +110,22 @@
             </FrameLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
-        <FrameLayout
-            android:id="@+id/button_container"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_acabar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:fadeScrollbars="false"
-            android:paddingTop="50dp">
-
-
-
-            <Button
-                android:id="@+id/btn_acabar"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/fons_buttons2"
-                android:text="@string/dbtnacabar"
-                android:visibility="invisible"
-                android:textColor="@android:color/background_dark"
-                android:textSize="30sp" />
-        </FrameLayout>
+            android:layout_height="80dp"
+            android:background="@drawable/fons_buttons2"
+            android:text="@string/dbtnacabar"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:visibility="invisible" />
     </LinearLayout>
 </LinearLayout>

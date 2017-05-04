@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -64,6 +65,20 @@ public class Preguntar extends AppCompatActivity {
                     mostrarPregunta.putExtra("tips",tips);
                     startActivity(mostrarPregunta);
                 }
+            }
+        });
+        pregunta.setOnKeyListener(new View.OnKeyListener() {
+
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (keyCode == KeyEvent.KEYCODE_ENTER  && event.getAction() == KeyEvent.ACTION_DOWN) {
+
+                    if ( ((EditText)v).getLineCount() >= 7 )
+                        return true;
+                }
+
+                return false;
             }
         });
     }

@@ -25,6 +25,7 @@ import java.util.Random;
 public class Moneda extends AppCompatActivity {
     ImageView moneda,fons;
     TextView pregunta;
+    Button acabar;
     Random rm = new Random();
     Intent i;
     static ImageView title;
@@ -44,6 +45,7 @@ public class Moneda extends AppCompatActivity {
         fons = (ImageView)findViewById(R.id.fons_moneda);
         pregunta=(TextView)findViewById(R.id.stc_pregunta2);
         title = (ImageView)findViewById(R.id.titlemoneda);
+        acabar = (Button)findViewById(R.id.btn_acabar2);
 
         //Call of changeLanguage()
         changeLanguage();
@@ -51,6 +53,7 @@ public class Moneda extends AppCompatActivity {
         //It change the font family to another (external font family)
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Amatic-Bold.ttf");
         pregunta.setTypeface(custom_font);
+        acabar.setTypeface(custom_font);
 
         //User wants tips???
         i = getIntent();
@@ -72,20 +75,16 @@ public class Moneda extends AppCompatActivity {
         moneda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!cara || pregunta.getVisibility()==View.VISIBLE){
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
-                }else if (cara && pregunta.getVisibility()==View.INVISIBLE){
+                if (cara && pregunta.getVisibility()==View.INVISIBLE){
                     moneda.setVisibility(View.INVISIBLE);
                     pregunta.setText(i.getStringExtra("pregunta"));
                     pregunta.setVisibility(View.VISIBLE);
                     StartSpeak(i.getStringExtra("pregunta"));
-
                 }
+                acabar.setVisibility(View.VISIBLE);
             }
         });
-        pregunta.setOnClickListener(new View.OnClickListener() {
+        acabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);

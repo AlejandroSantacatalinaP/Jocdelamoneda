@@ -34,14 +34,14 @@
             android:id="@+id/roda"
             android:layout_width="match_parent"
             android:layout_height="278dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/rodeta_xuleta" />
 
         <ImageView
             android:id="@+id/fletxa"
             android:layout_width="match_parent"
             android:layout_height="268dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/fletxa_1" />
 
     </FrameLayout>

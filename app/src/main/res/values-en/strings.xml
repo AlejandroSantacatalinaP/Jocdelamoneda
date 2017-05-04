@@ -13,7 +13,7 @@
     <string name="btngirar">Spin</string>
     <string name="btnparar">Stop</string>
     <string name="preg">Question</string>
-    <string name="dtxtpregunta">We have the two players… The first selected have to write the question to the second and click ‘send’. At the moment, the question can only see it who writes the question.</string>
+    <string name="dtxtpregunta">We have the two players… The first selected have to write the question to the second and click ‘send’. At the moment, the question can only being seen by who writes the question.</string>
     <string name="dbtnenviar">Send</string>
     <string name="dtitlecontestacio">Answer</string>
     <string name="dtxtcontestacio">Pass the smartphone to the second player...</string>
