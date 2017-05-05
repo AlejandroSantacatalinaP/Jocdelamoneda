@@ -32,4 +32,5 @@
     <string name="valorMoneda">¿ Cara o cruz ?</string>
     <string name="dtxtmonedapropia">Por último, si ha salido cara, pulsa ‘CARA’ para ver y decir la pregunta a todos. En caso de cruz, se ha terminado la ronda.</string>
     <string name="dbtnacabar">Terminar ronda</string>
+    <string name="dbtnvore">Ver pregunta</string>
 </resources>

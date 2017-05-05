@@ -18,6 +18,8 @@ import android.widget.Toast;
 import java.util.Locale;
 import java.util.Random;
 
+import pl.droidsonroids.gif.GifImageView;
+
 /**
  * Created by Alex on 28/04/2017.
  */
@@ -25,8 +27,9 @@ import java.util.Random;
 public class Moneda extends AppCompatActivity {
     ImageView moneda,fons;
     TextView pregunta;
-    Button acabar;
+    Button acabar, vore;
     Random rm = new Random();
+    GifImageView gifmoneda;
     Intent i;
     static ImageView title;
     private TextToSpeech TTS;
@@ -46,6 +49,8 @@ public class Moneda extends AppCompatActivity {
         pregunta=(TextView)findViewById(R.id.stc_pregunta2);
         title = (ImageView)findViewById(R.id.titlemoneda);
         acabar = (Button)findViewById(R.id.btn_acabar2);
+        gifmoneda = (GifImageView) findViewById(R.id.gifmoneda);
+        vore = (Button)findViewById(R.id.btn_voree);
 
         //Call of changeLanguage()
         changeLanguage();
@@ -54,43 +59,47 @@ public class Moneda extends AppCompatActivity {
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Amatic-Bold.ttf");
         pregunta.setTypeface(custom_font);
         acabar.setTypeface(custom_font);
+        vore.setTypeface(custom_font);
 
         //User wants tips???
         i = getIntent();
         tips=i.getBooleanExtra("tips",false);
         if (tips){
             dialog();
-        }else{
-            if (rm.nextInt(10)%2==0){
-
-                moneda.setImageResource(R.drawable.cara);
-                cara=true;
-
-            }else{
-                moneda.setImageResource(R.drawable.creu);
-                cara=false;
-                acabar.setVisibility(View.VISIBLE);
-            }
-            moneda.setClickable(true);
         }
-        moneda.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (cara && pregunta.getVisibility()==View.INVISIBLE){
-                    moneda.setVisibility(View.INVISIBLE);
-                    pregunta.setText(i.getStringExtra("pregunta"));
-                    pregunta.setVisibility(View.VISIBLE);
-                    StartSpeak(i.getStringExtra("pregunta"));
+
+        gifmoneda.postDelayed(new Runnable() {
+            public void run() {
+                if (rm.nextInt(10)%2==0){
+                    moneda.setImageResource(R.drawable.cara);
+                    cara=true;
+                    vore.setVisibility(View.VISIBLE);
+                }else{
+                    moneda.setImageResource(R.drawable.creu);
+                    cara=false;
+                    acabar.setVisibility(View.VISIBLE);
                 }
-                acabar.setVisibility(View.VISIBLE);
+                gifmoneda.setVisibility(View.INVISIBLE);
+                moneda.setVisibility(View.VISIBLE);
             }
-        });
+        }, 3000);
         acabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+            }
+        });
+        vore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vore.setVisibility(View.INVISIBLE);
+                pregunta.setText(i.getStringExtra("pregunta"));
+                pregunta.setVisibility(View.VISIBLE);
+                moneda.setVisibility(View.INVISIBLE);
+                StartSpeak(i.getStringExtra("pregunta"));
+                acabar.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -102,16 +111,17 @@ public class Moneda extends AppCompatActivity {
                 .setPositiveButton(R.string.dbtnmoneda, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        if (rm.nextInt(10)%2==0){
+                        /*if (rm.nextInt(10)%2==0){
 
                             moneda.setImageResource(R.drawable.cara);
                             cara=true;
-
+                            vore.setVisibility(View.VISIBLE);
                         }else{
                             moneda.setImageResource(R.drawable.creu);
                             cara=false;
+                            acabar.setVisibility(View.VISIBLE);
                         }
-                        moneda.setClickable(true);
+                        moneda.setClickable(true);*/
                         dialog.cancel();
                     }
                 }).create();

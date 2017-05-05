@@ -32,4 +32,5 @@
     <string name="valorMoneda">Cara o creu ?</string>
     <string name="dtxtmonedapropia">Per últim, si ha ixit cara, polsa el botó ‘CARA’ per veure i dir la pregunta a tots. En cas de creu, la ronda s\'ha acabat.</string>
     <string name="dbtnacabar">Acabar ronda</string>
+    <string name="dbtnvore">Veure pregunta</string>
 </resources>
