@@ -3,17 +3,19 @@
     android:background="?attr/colorBackgroundFloating"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-    <ImageView
-        android:id="@+id/titlepreguntar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerInside"
-        android:layout_marginTop="40dp" />
-</LinearLayout>
+
+        <ImageView
+            android:id="@+id/titlepreguntar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,13 +42,13 @@
                 android:layout_height="305dp"
                 android:background="@android:color/transparent"
                 android:isScrollContainer="false"
-                android:lineSpacingExtra="0.7mm"
-                android:lines="5"
+                android:lineSpacingExtra="0.5mm"
+                android:lines="6"
                 android:maxLength="250"
                 android:paddingLeft="30dp"
                 android:paddingRight="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="21sp" />
+                android:textSize="25sp" />
 
         </FrameLayout>
     </LinearLayout>

@@ -12,9 +12,9 @@
 
         <ImageView
             android:id="@+id/titlemonedapr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
             android:scaleType="centerInside" />
     </LinearLayout>
 
@@ -95,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="30dp"
+                    android:paddingLeft="40dp"
                     android:paddingRight="30dp"
                     android:paddingTop="5dp"
                     android:textColor="@android:color/background_dark"

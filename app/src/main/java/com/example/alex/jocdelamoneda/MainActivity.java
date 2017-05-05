@@ -10,6 +10,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         explicacio = (TextView) findViewById(R.id.stc_explicacio);
         next = (Button) findViewById(R.id.btn_comença);
         title = (ImageView) findViewById(R.id.titlemain);
-
+        //tam();
         //Call of changeLanguage()
         changeLanguage();
 
@@ -127,5 +128,26 @@ public class MainActivity extends AppCompatActivity {
             config.setLocale(localizacion);
             title.setBackgroundResource(R.drawable.titlemain_en);
         }
+    }
+    public void tam(){
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int width = metrics.widthPixels; // ancho absoluto en pixels
+        int height = metrics.heightPixels; // alto absoluto en pixels
+        if(height>1300){
+            Log.e("1","e");
+            explicacio.setTextSize(explicacio.getTextSize()+1);
+        }else if(height>1500){
+            Log.e("2","e");
+            explicacio.setTextSize(explicacio.getTextSize()+2);
+        }else if (height>1700){
+            Log.e("3","e");
+            explicacio.setTextSize(explicacio.getTextSize()+3);
+        }else if(height>1920){
+            Log.e("4","e");
+            explicacio.setTextSize(explicacio.getTextSize()+4);
+        }
+
     }
 }

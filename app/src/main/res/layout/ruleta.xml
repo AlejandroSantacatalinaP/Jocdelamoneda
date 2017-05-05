@@ -9,19 +9,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:layout_weight="1">
 
         <ImageView
             android:id="@+id/titleruleta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
             android:scaleType="centerInside" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="1">
 
         <FrameLayout
@@ -34,14 +36,12 @@
                 android:id="@+id/roda"
                 android:layout_width="match_parent"
                 android:layout_height="278dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/rodeta_xuleta" />
 
             <ImageView
                 android:id="@+id/fletxa"
                 android:layout_width="match_parent"
                 android:layout_height="268dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/fletxa_1" />
 
         </FrameLayout>
@@ -50,6 +50,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_weight="1">
 
         <FrameLayout
