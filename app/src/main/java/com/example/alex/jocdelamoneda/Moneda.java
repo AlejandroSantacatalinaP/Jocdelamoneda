@@ -69,6 +69,7 @@ public class Moneda extends AppCompatActivity {
             }else{
                 moneda.setImageResource(R.drawable.creu);
                 cara=false;
+                acabar.setVisibility(View.VISIBLE);
             }
             moneda.setClickable(true);
         }

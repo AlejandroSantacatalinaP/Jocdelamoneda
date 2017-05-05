@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Juego de la moneda</string>
-    <string name="txtinicial">Bienvenidos al juego de la moneda. Este juego consiste en hacer una pregunta a uno de los jugadores, los dos elegidos con una ruleta. La pregunta solo la sabrán las dos personas en juego. El otro jugador contestará esta pregunta en voz alta. Después, se tirará una moneda, si sale cara se dirá la pregunta. En caso de que sea cruz, la ronda se terminará.</string>
+    <string name="txtinicial">Bienvenidos al juego de la moneda. Este juego consiste en hacer una pregunta a uno de los jugadores, los dos elegidos con una ruleta. La pregunta solo la sabrán las dos personas en juego. El otro jugador contestará esta pregunta en voz alta. Luego, se lanzará una moneda, si sale cara se dirá la pregunta. En caso de que sea cruz, la ronda se terminará.</string>
     <string name="titleinicial">El juego de la moneda</string>
     <string name="btninicial">Siguiente</string>
     <string name="dmaintxt">Mostrar diálogos sobre como jugar</string>
@@ -13,7 +13,7 @@
     <string name="btngirar">Girar</string>
     <string name="btnparar">Parar</string>
     <string name="preg">Pregunta</string>
-    <string name="dtxtpregunta">Ya tenemos a los dos jugadores… El primer seleccionado que esciba una pregunta para el segundo y pulse ‘enviar’. ¡ La pregunta, por el momento, sólo la puede ver quién la escribe !</string>
+    <string name="dtxtpregunta">Ya tenemos a los dos jugadores… El primer seleccionado que escriba una pregunta para el segundo y pulse ‘enviar’. La pregunta, por el momento, sólo la puede ver quién la escribe.</string>
     <string name="dbtnenviar">Enviar</string>
     <string name="dtitlecontestacio">Contestación</string>
     <string name="dtxtcontestacio">Pasad el móvil al segundo jugador…</string>
@@ -21,7 +21,7 @@
     <string name="btncontestacio">Ver la pregunta</string>
     <string name="btnllançar">Lanzar la moneda</string>
     <string name="dtitlemoneda">Moneda</string>
-    <string name="dtxtmoneda">Por último, si ha salido cara, púlsala para ver y decir a todos la pregunta. Si sale cruz, púlsala para terminar la ronda. Nadie más sabrá la pregunta.</string>
+    <string name="dtxtmoneda">Por último, si ha salido cara, púlsala para ver y decir a todos la pregunta. Si sale cruz, se ha terminado la ronda.</string>
     <string name="dbtnmoneda">¡ Ver la moneda !</string>
     <string name="quit">¿ Salir de la app ?</string>
     <string name="moneda">¿ Quieres lanzar una moneda real o ver la moneda al azar de la aplicación ?</string>
@@ -30,6 +30,6 @@
     <string name="cara">cara</string>
     <string name="creu">cruz</string>
     <string name="valorMoneda">¿ Cara o cruz ?</string>
-    <string name="dtxtmonedapropia">Por último, si ha salido cara, pulsa ‘CARA’ para ver y decir la pregunta a todos. En caso de cruz, pulsa ‘CRUZ’ para acabar la ronda. Nadie más sabrá la pregunta.</string>
+    <string name="dtxtmonedapropia">Por último, si ha salido cara, pulsa ‘CARA’ para ver y decir la pregunta a todos. En caso de cruz, se ha terminado la ronda.</string>
     <string name="dbtnacabar">Terminar ronda</string>
 </resources>

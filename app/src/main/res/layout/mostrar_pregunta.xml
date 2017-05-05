@@ -3,91 +3,89 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:background="?attr/colorBackgroundFloating"
     android:layout_height="match_parent">
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_weight="1">
-    <ImageView
-        android:id="@+id/titlecontestacio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerInside"
-        android:layout_marginTop="40dp" />
-        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/titlecontestacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
         <FrameLayout
             android:id="@+id/image_container"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:fadeScrollbars="false">
 
             <ImageView
                 android:id="@+id/fons_pregunta"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/mostra_preg" />
 
             <TextView
                 android:id="@+id/stc_pregunta"
                 android:layout_width="match_parent"
                 android:layout_height="315dp"
-                android:layout_marginTop="40dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingTop="40dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp"
                 android:textColor="@android:color/background_dark"
                 android:textColorLink="@android:color/background_dark"
-                android:textSize="28sp" />
+                android:textSize="25sp" />
 
         </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-    <FrameLayout
-        android:id="@+id/button_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_weight="1">
 
-        <Button
-            android:id="@+id/btn_vorela"
+        <FrameLayout
+            android:id="@+id/button_container"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/fons_buttons2"
-            android:text="@string/btncontestacio"
-            android:textColor="@android:color/background_dark"
-            android:textSize="30sp" />
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_vorela"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/fons_buttons"
+                android:text="@string/btncontestacio"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
             <!--android:layout_marginLeft="10dp"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="10dp"-->
 
 
-        <Button
-            android:id="@+id/btn_moneda"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/fons_buttons2"
-            android:text="@string/btnllançar"
-            android:textColor="@android:color/background_dark"
-            android:textSize="30sp"
-            android:visibility="invisible" />
+            <Button
+                android:id="@+id/btn_moneda"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fons_buttons"
+                android:text="@string/btnllançar"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:visibility="invisible" />
 
-    </FrameLayout>
-</LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
 </LinearLayout>

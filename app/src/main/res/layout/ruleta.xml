@@ -7,7 +7,7 @@
     android:weightSum="1">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
@@ -18,83 +18,83 @@
             android:layout_marginTop="40dp"
             android:scaleType="centerInside" />
     </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="1">
-    <FrameLayout
-        android:id="@+id/image_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
 
-        <ImageView
-            android:id="@+id/roda"
-            android:layout_width="match_parent"
-            android:layout_height="278dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/rodeta_xuleta" />
-
-        <ImageView
-            android:id="@+id/fletxa"
-            android:layout_width="match_parent"
-            android:layout_height="268dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/fletxa_1" />
-
-    </FrameLayout>
-</LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-    <FrameLayout
-        android:id="@+id/button_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/roda"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rodeta_xuleta" />
+
+            <ImageView
+                android:id="@+id/fletxa"
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fletxa_1" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/gira"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fons_buttons"
+                android:text="@string/btngirar"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/para"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fons_buttons"
+                android:text="@string/btnparar"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
 
         <Button
-            android:id="@+id/gira"
+            android:id="@+id/pregunta"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/fons_buttons2"
-            android:text="@string/btngirar"
-            android:textColor="@android:color/background_dark"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/para"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/fons_buttons2"
-            android:text="@string/btnparar"
+            android:background="@drawable/fons_buttons"
+            android:text="@string/preg"
             android:textColor="@android:color/background_dark"
             android:textSize="30sp"
             android:visibility="invisible" />
-
-    </FrameLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1">
-    <Button
-        android:id="@+id/pregunta"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/fons_buttons2"
-        android:text="@string/preg"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:visibility="invisible" />
     </LinearLayout>
 </LinearLayout>

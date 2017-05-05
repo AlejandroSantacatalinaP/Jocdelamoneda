@@ -21,7 +21,7 @@
     <string name="btncontestacio">See the question</string>
     <string name="btnllançar">Flip the coin</string>
     <string name="dtitlemoneda">Coin</string>
-    <string name="dtxtmoneda">Finally, if heads click it to see and say the question to everybody. If tails, click it to end the round. Nobody else will know the question.</string>
+    <string name="dtxtmoneda">Finally, if heads click it to see and say the question to everybody. If tails, the round has been finished.</string>
     <string name="dbtnmoneda">See coin !</string>
     <string name="quit">Exit from app ?</string>
     <string name="moneda">Do you want to flip a real coin or see the random coin of the app ?</string>
@@ -30,6 +30,6 @@
     <string name="cara">heads</string>
     <string name="creu">tails</string>
     <string name="valorMoneda">Heads or tails ?</string>
-    <string name="dtxtmonedapropia">Finally, if heads click ‘HEADS’ to see and say the question to everybody. If tails, click ‘TAILS’ to end the round. Nobody else will know the question.</string>
+    <string name="dtxtmonedapropia">Finally, if heads click ‘HEADS’ to see and say the question to everybody. If tails, the round has been finished.</string>
     <string name="dbtnacabar">Finish round</string>
 </resources>

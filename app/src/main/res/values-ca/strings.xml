@@ -13,7 +13,7 @@
     <string name="btngirar">Girar</string>
     <string name="btnparar">Parar</string>
     <string name="preg">Pregunta</string>
-    <string name="dtxtpregunta">Ja tenim els dos jugadors… El primer que ha segut seleccionat que escriga una pregunta per al segon i polse ‘enviar’. Aquesta pregunta, de moment, sols pot veure-la qui l’escriu !</string>
+    <string name="dtxtpregunta">Ja tenim els dos jugadors… El primer que ha segut seleccionat que escriga una pregunta per al segon i polse ‘enviar’. Aquesta pregunta, de moment, sols pot veure-la qui l’escriu.</string>
     <string name="dbtnenviar">Enviar</string>
     <string name="dtitlecontestacio">Contestació</string>
     <string name="dtxtcontestacio">"Passeu el mòbil al segon jugador… "</string>
@@ -21,7 +21,7 @@
     <string name="btncontestacio">Veure la pregunta</string>
     <string name="btnllançar">Llançar la moneda</string>
     <string name="dtitlemoneda">Moneda</string>
-    <string name="dtxtmoneda">Per últim, si ha ixit cara polsa-la per veure i dir la pregunta a tots. En cas de creu, polsa-la per acabar la ronda. Ningú més sabrà la pregunta.</string>
+    <string name="dtxtmoneda">Per últim, si ha ixit cara polsa-la per veure i dir la pregunta a tots. En cas de creu, la ronda s\'ha acabat.</string>
     <string name="dbtnmoneda">Veure moneda !</string>
     <string name="quit">Ixir de la app ?</string>
     <string name="moneda">Vols llançar una moneda real o veure la moneda a l\'atzar de l\'aplicació?</string>
@@ -30,6 +30,6 @@
     <string name="cara">cara</string>
     <string name="creu">creu</string>
     <string name="valorMoneda">Cara o creu ?</string>
-    <string name="dtxtmonedapropia">Per últim, si ha ixit cara, polsa el botó ‘CARA’ per veure i dir la pregunta a tots. En cas de creu, pol-sa ‘CREU’ per acabar la ronda. Ningú més sabrà la pregunta.</string>
+    <string name="dtxtmonedapropia">Per últim, si ha ixit cara, polsa el botó ‘CARA’ per veure i dir la pregunta a tots. En cas de creu, la ronda s\'ha acabat.</string>
     <string name="dbtnacabar">Acabar ronda</string>
 </resources>

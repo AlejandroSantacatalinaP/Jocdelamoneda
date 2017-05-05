@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:background="?attr/colorBackgroundFloating"
     android:layout_height="match_parent">
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
         android:layout_weight="1">
 
         <ImageView
@@ -21,7 +21,6 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -48,10 +47,8 @@
                 android:id="@+id/image_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:fadeScrollbars="false"
-                android:paddingTop="50dp">
+                android:paddingTop="20dp">
 
                 <ImageView
                     android:id="@+id/fons_preguntac"
@@ -63,22 +60,20 @@
 
                 <Button
                     android:id="@+id/btn_cara2"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_gravity="top"
-                    android:layout_marginBottom="50dp"
-                    android:background="@drawable/fons_buttons2"
+                    android:background="@drawable/fons_buttons"
                     android:text="@string/cara"
                     android:textColor="@android:color/background_dark"
                     android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/bacabar_creu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/fons_buttons2"
+                    android:background="@drawable/fons_buttons"
                     android:text="@string/dbtnacabar"
                     android:textColor="@android:color/background_dark"
                     android:textSize="40sp"
@@ -86,11 +81,11 @@
 
                 <Button
                     android:id="@+id/btn_creu2"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="80dp"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="20dp"
-                    android:background="@drawable/fons_buttons2"
+                    android:background="@drawable/fons_buttons"
                     android:text="@string/creu"
                     android:textColor="@android:color/background_dark"
                     android:textSize="30sp" />
@@ -99,9 +94,10 @@
                     android:id="@+id/stc_cara"
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:layout_marginTop="30dp"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="5dp"
                     android:textColor="@android:color/background_dark"
                     android:textColorLink="@android:color/background_dark"
                     android:textSize="28sp"
@@ -114,15 +110,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginBottom="50dp">
 
         <Button
             android:id="@+id/btn_acabar"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/fons_buttons2"
+            android:background="@drawable/fons_buttons"
             android:text="@string/dbtnacabar"
             android:textColor="@android:color/background_dark"
             android:textSize="30sp"

@@ -63,15 +63,13 @@
 
         <Button
             android:id="@+id/btn_comença"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/fons_buttons2"
-            android:foregroundGravity="bottom"
+            android:background="@drawable/fons_buttons"
+            android:foregroundGravity="bottom|center_horizontal"
             android:text="@string/btninicial"
             android:textColor="#000000"
             android:textSize="30dp" />
