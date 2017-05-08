@@ -25,15 +25,15 @@ import pl.droidsonroids.gif.GifImageView;
  */
 
 public class Moneda extends AppCompatActivity {
-    ImageView moneda,fons;
+    static ImageView moneda,fons;
     TextView pregunta;
-    Button acabar, vore;
-    Random rm = new Random();
-    GifImageView gifmoneda;
+    static Button acabar, vore;
+    static Random rm = new Random();
+    static GifImageView gifmoneda;
     Intent i;
     static ImageView title;
     private TextToSpeech TTS;
-    boolean tips, cara=false;
+    static boolean tips, cara=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,23 +66,12 @@ public class Moneda extends AppCompatActivity {
         tips=i.getBooleanExtra("tips",false);
         if (tips){
             dialog();
+
+        }else{
+            girGif();
         }
 
-        gifmoneda.postDelayed(new Runnable() {
-            public void run() {
-                if (rm.nextInt(10)%2==0){
-                    moneda.setImageResource(R.drawable.cara);
-                    cara=true;
-                    vore.setVisibility(View.VISIBLE);
-                }else{
-                    moneda.setImageResource(R.drawable.creu);
-                    cara=false;
-                    acabar.setVisibility(View.VISIBLE);
-                }
-                gifmoneda.setVisibility(View.INVISIBLE);
-                moneda.setVisibility(View.VISIBLE);
-            }
-        }, 3000);
+
         acabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,17 +100,7 @@ public class Moneda extends AppCompatActivity {
                 .setPositiveButton(R.string.dbtnmoneda, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        /*if (rm.nextInt(10)%2==0){
-
-                            moneda.setImageResource(R.drawable.cara);
-                            cara=true;
-                            vore.setVisibility(View.VISIBLE);
-                        }else{
-                            moneda.setImageResource(R.drawable.creu);
-                            cara=false;
-                            acabar.setVisibility(View.VISIBLE);
-                        }
-                        moneda.setClickable(true);*/
+                        girGif();
                         dialog.cancel();
                     }
                 }).create();
@@ -152,7 +131,23 @@ public class Moneda extends AppCompatActivity {
         private void speakWords ( String speech){
             TTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null);
         }
-
+    public static void girGif(){
+        gifmoneda.postDelayed(new Runnable() {
+            public void run() {
+                if (rm.nextInt(10)%2==0){
+                    moneda.setImageResource(R.drawable.cara);
+                    cara=true;
+                    vore.setVisibility(View.VISIBLE);
+                }else{
+                    moneda.setImageResource(R.drawable.creu);
+                    cara=false;
+                    acabar.setVisibility(View.VISIBLE);
+                }
+                gifmoneda.setVisibility(View.INVISIBLE);
+                moneda.setVisibility(View.VISIBLE);
+            }
+        }, 2600);
+    }
     public static void changeLanguage() {
         //Detects the current phone language and adapts the app language.
         String language = Locale.getDefault().getDisplayLanguage();

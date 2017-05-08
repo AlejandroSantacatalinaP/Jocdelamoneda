@@ -34,9 +34,10 @@ public class Ruleta extends AppCompatActivity {
     ImageView roda, fletxa;
     Button gira, pregunta,para;
     Boolean aux2;
-    Random r = new Random();
+    static Random r = new Random();
     boolean tips=true;
     static ImageView title;
+    int graus,graus2;
     int aux = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,10 +77,12 @@ public class Ruleta extends AppCompatActivity {
         gira.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                aux++;
-                Rotate(fletxa);
-                gira.setVisibility(View.INVISIBLE);
-                para.setVisibility(View.VISIBLE);
+
+                    aux++;
+                    Rotate(fletxa);
+                    gira.setVisibility(View.INVISIBLE);
+                    para.setVisibility(View.VISIBLE);
+
 
             }
         });
@@ -94,8 +97,13 @@ public class Ruleta extends AppCompatActivity {
                 //Stop the spinner
                 fletxa.clearAnimation();
                 //Let the arrow to a random position
-                fletxa.setRotation(r.nextInt(360 - 0));
-
+                if(aux==2) {
+                    graus=r.nextInt(360 - 0);
+                    fletxa.setRotation(graus);
+                }else{
+                    graus2=r.nextInt(360 - 0);
+                    fletxa.setRotation(grausSegon(graus,graus2));
+                }
                 if (aux>3){
                     //If we make spin and stop for two times the spinner,
                     // show the button for the next activity
@@ -157,6 +165,62 @@ public class Ruleta extends AppCompatActivity {
         }else{
             title.setImageResource(R.drawable.titleruleta_en);
         }
+    }
+
+    //TODO POSAR ESTA FUNCIO ON PERTOCA I VORE SI FUNCIONA....
+    public static int grausSegon(int g1, int g2){
+        if(0<=g1 && g1<36){
+            if(0<=g2 && g2<36){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(36<=g1 && g1<72){
+            if(36<=g2 && g2<72){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(72<=g1 && g1<108){
+            if(72<=g2 && g2<108){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(108<=g1 && g1<144){
+            if(108<=g2 && g2<144){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(144<=g1 && g1<180){
+            if(144<=g2 && g2<180){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(180<=g1 && g1<216){
+            if(180<=g2 && g2<216){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(216<=g1 && g1<252){
+            if(216<=g2 && g2<252){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(252<=g1 && g1<288){
+            if(252<=g2 && g2<288){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(288<=g1 && g1<324){
+            if(288<=g2 && g2<324){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }else if(324<=g1 && g1<360){
+            if(324<=g2 && g2<360){
+                g2=r.nextInt(360-0);
+                grausSegon(g1,g2);
+            }
+        }
+    return g2;
     }
 
 }
