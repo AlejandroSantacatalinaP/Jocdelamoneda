@@ -98,10 +98,10 @@ public class Ruleta extends AppCompatActivity {
                 fletxa.clearAnimation();
                 //Let the arrow to a random position
                 if(aux==2) {
-                    graus=r.nextInt(360 - 0);
+                    graus=r.nextInt(360);
                     fletxa.setRotation(graus);
                 }else{
-                    graus2=r.nextInt(360 - 0);
+                    graus2=r.nextInt(360);
                     fletxa.setRotation(grausSegon(graus,graus2));
                 }
                 if (aux>3){
@@ -167,56 +167,57 @@ public class Ruleta extends AppCompatActivity {
         }
     }
 
-    //TODO POSAR ESTA FUNCIO ON PERTOCA I VORE SI FUNCIONA....
     public static int grausSegon(int g1, int g2){
+        //If the two variables were in the same range, change the second
+        // (with this, the spinner can't choose the same player)
         if(0<=g1 && g1<36){
             if(0<=g2 && g2<36){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(36<=g1 && g1<72){
             if(36<=g2 && g2<72){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(72<=g1 && g1<108){
             if(72<=g2 && g2<108){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(108<=g1 && g1<144){
             if(108<=g2 && g2<144){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(144<=g1 && g1<180){
             if(144<=g2 && g2<180){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(180<=g1 && g1<216){
             if(180<=g2 && g2<216){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(216<=g1 && g1<252){
             if(216<=g2 && g2<252){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(252<=g1 && g1<288){
             if(252<=g2 && g2<288){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(288<=g1 && g1<324){
             if(288<=g2 && g2<324){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }else if(324<=g1 && g1<360){
             if(324<=g2 && g2<360){
-                g2=r.nextInt(360-0);
+                g2=r.nextInt(360);
                 grausSegon(g1,g2);
             }
         }
