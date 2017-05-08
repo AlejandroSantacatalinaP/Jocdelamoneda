@@ -51,11 +51,13 @@ public class Preguntar extends AppCompatActivity {
         enviar.setTypeface(custom_font);
 
         Intent i =getIntent();
+
+        //User wants tips?
         tips=i.getBooleanExtra("tips",false);
         if (tips){
             dialog();
         }
-
+        //CLICKLISTENERS
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +69,8 @@ public class Preguntar extends AppCompatActivity {
                 }
             }
         });
+
+        //KEYLISTENERS
         pregunta.setOnKeyListener(new View.OnKeyListener() {
 
             @Override

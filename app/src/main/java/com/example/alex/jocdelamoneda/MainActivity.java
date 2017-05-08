@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         //Creates the intent. It go to Ruleta.class(Spinner)
         pantalla2 = new Intent(getApplicationContext(), Ruleta.class);
 
-        //What to do after click on next button
+        //CLICKLISTENERS
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +106,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static void changeLanguage() {
-        //Detects the current phone language and adapts the app language.
+        //Detects the current phone language and adapts the app language
+        // and use the title photo according to the language
         String language = Locale.getDefault().getDisplayLanguage();
         Locale localizacion;
         Configuration config = new Configuration();
@@ -128,26 +129,5 @@ public class MainActivity extends AppCompatActivity {
             config.setLocale(localizacion);
             title.setBackgroundResource(R.drawable.titlemain_en);
         }
-    }
-    public void tam(){
-
-        DisplayMetrics metrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        int width = metrics.widthPixels; // ancho absoluto en pixels
-        int height = metrics.heightPixels; // alto absoluto en pixels
-        if(height>1300){
-            Log.e("1","e");
-            explicacio.setTextSize(explicacio.getTextSize()+1);
-        }else if(height>1500){
-            Log.e("2","e");
-            explicacio.setTextSize(explicacio.getTextSize()+2);
-        }else if (height>1700){
-            Log.e("3","e");
-            explicacio.setTextSize(explicacio.getTextSize()+3);
-        }else if(height>1920){
-            Log.e("4","e");
-            explicacio.setTextSize(explicacio.getTextSize()+4);
-        }
-
     }
 }

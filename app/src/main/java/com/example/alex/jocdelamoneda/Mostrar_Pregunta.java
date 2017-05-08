@@ -51,13 +51,15 @@ public class Mostrar_Pregunta extends AppCompatActivity {
         pregunta.setTypeface(custom_font);
         vorela.setTypeface(custom_font);
         moneda.setTypeface(custom_font);
+
+        //Users wants tips?
          i = getIntent();
         tips=i.getBooleanExtra("tips",false);
         if (tips){
             dialog();
         }
 
-
+        //CLICKLISTENERS
         vorela.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

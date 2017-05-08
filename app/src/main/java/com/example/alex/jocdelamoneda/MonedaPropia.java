@@ -56,6 +56,7 @@ public class MonedaPropia extends AppCompatActivity {
         acabar.setTypeface(custom_font);
         acabarcreu.setTypeface(custom_font);
 
+        //User wants tips?
         i = getIntent();
         pregunta.setText(i.getStringExtra("pregunta"));
         tips=i.getBooleanExtra("tips",false);
@@ -63,6 +64,7 @@ public class MonedaPropia extends AppCompatActivity {
             dialog();
         }
 
+        //CLICKLISTENERS
         cara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

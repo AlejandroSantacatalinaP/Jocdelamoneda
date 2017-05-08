@@ -71,10 +71,11 @@ public class Moneda extends AppCompatActivity {
             girGif();
         }
 
-
+        //CLICKLISTENERS
         acabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Open the first windows and close all the others
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
@@ -83,6 +84,7 @@ public class Moneda extends AppCompatActivity {
         vore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //set visible some buttons, and invisible others
                 vore.setVisibility(View.INVISIBLE);
                 pregunta.setText(i.getStringExtra("pregunta"));
                 pregunta.setVisibility(View.VISIBLE);
@@ -109,7 +111,7 @@ public class Moneda extends AppCompatActivity {
     }
 
     private void StartSpeak(final String data) {
-
+        //Reads, with voice, the question in heads case.
         TTS = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int initStatus) {
@@ -132,8 +134,10 @@ public class Moneda extends AppCompatActivity {
             TTS.speak(speech, TextToSpeech.QUEUE_FLUSH, null);
         }
     public static void girGif(){
+        //Activate the gif during 2600ms
         gifmoneda.postDelayed(new Runnable() {
             public void run() {
+                //While gif is activated, with a random number set the coin's photo
                 if (rm.nextInt(10)%2==0){
                     moneda.setImageResource(R.drawable.cara);
                     cara=true;
